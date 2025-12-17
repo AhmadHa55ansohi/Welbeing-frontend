@@ -8,7 +8,7 @@ def main(page: ft.Page):
     page.bgcolor = "#FFFFFF"
     page.scroll = "auto"
     
-    # Exact colors from design
+    
     primary_blue = "#2D5016"      # Blue for headers
     accent_red = "#FF6B6B"        # Red for Release section
     radio_selected = "#2D5016"    # Blue for selected radio
@@ -19,13 +19,13 @@ def main(page: ft.Page):
     card_bg = "#FFFFFF"           # White background
     checkbox_color = "#2D5016"    # Blue for checkboxes
     
-    # Main container with exact spacing
+   
     main_container = ft.Container(
         padding=ft.padding.symmetric(horizontal=20, vertical=0),
         bgcolor="#FFFFFF"
     )
     
-    # HEADER SECTION - Exact match
+    
     header_section = ft.Container(
         content=ft.Column([
             ft.Container(height=30),  # Top spacing
@@ -718,4 +718,5 @@ def main(page: ft.Page):
     page.add(main_container)
 
 if __name__ == "__main__":
+
     ft.app(target=main)
