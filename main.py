@@ -43,7 +43,7 @@ def main(page: ft.Page):
                 padding=ft.padding.only(bottom=8)
             ),
             
-            # Subtitle - Exact from design
+            
             ft.Container(
                 content=ft.Text(
                     "Track habits, visualize growth, and guide your wellbeing",
@@ -55,13 +55,13 @@ def main(page: ft.Page):
                 padding=ft.padding.only(bottom=30)
             ),
             
-            # Divider line - Exact from design
+            
             ft.Divider(height=1, color=border_color, thickness=1)
         ]),
         padding=0
     )
     
-    # BREATHING METHODS SECTION - Left column
+    
     breathing_radio_group = ft.RadioGroup(
         content=ft.Column([
             ft.Radio(
@@ -85,7 +85,7 @@ def main(page: ft.Page):
     
     breathing_card = ft.Container(
         content=ft.Column([
-            # Title with exact styling
+          
             ft.Container(
                 content=ft.Text(
                     "Breathing Methods",
@@ -96,7 +96,7 @@ def main(page: ft.Page):
                 padding=ft.padding.only(bottom=8)
             ),
             
-            # Description text - Exact styling and spacing
+            
             ft.Container(
                 content=ft.Text(
                     "Check guided breathing techniques to reduce anxiety and enhance your well-being",
@@ -107,16 +107,16 @@ def main(page: ft.Page):
                 padding=ft.padding.only(bottom=20)
             ),
             
-            # Radio buttons for breathing methods - Exact from design
+            
             ft.Container(
                 content=breathing_radio_group,
                 padding=ft.padding.only(bottom=20)
             ),
             
-            # Spacer to push button to bottom
+           
            
             
-            # Button - Exact styling from design (outline button)
+            
             ft.Container(
                 content=ft.ElevatedButton(
                     content=ft.Row([
@@ -146,7 +146,7 @@ def main(page: ft.Page):
         alignment=ft.alignment.top_center
     )
     
-    # STATISTICS SECTION - Below Breathing Methods
+    
     statistics_card = ft.Container(
         content=ft.Column([
             # Title
@@ -160,7 +160,7 @@ def main(page: ft.Page):
                 padding=ft.padding.only(bottom=16)
             ),
             
-            # Statistics in simple lines (NO BOXES) - Exact from design
+            
             ft.Column([
                 # Total habits
                 ft.Container(
@@ -230,7 +230,7 @@ def main(page: ft.Page):
             # Spacer
             ft.Container(height=0),
             
-            # Button - Exact styling from design (outline button)
+         
             ft.Container(
                 content=ft.ElevatedButton(
                     content=ft.Row([
@@ -261,7 +261,7 @@ def main(page: ft.Page):
         alignment=ft.alignment.top_center
     )
     
-    # Left column total height: 380 + 340 + 20 = 740px
+    
     
     # TREE SECTION
     try:
@@ -428,9 +428,9 @@ def main(page: ft.Page):
         width=580,
         height=740,  # Same height as left and right columns
         content=ft.Column([
-            # Tree Image takes most of the space
+           
             ft.Container(
-                height=540,  # Tree image area (740 - 180 - 20 = 540)
+                height=540, 
                 content=ft.Container(
                     content=tree_image_content,
                     alignment=ft.alignment.center,
